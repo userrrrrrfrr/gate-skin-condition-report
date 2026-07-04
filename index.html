@@ -2,55 +2,84 @@
 <html lang="he">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>העלאת צילומים</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       direction: rtl;
       background: #121212;
-      color: #000;
+      margin: 0;
       padding: 20px;
+      color: #000;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
     }
 
     .box {
-      background: #dddddd; /* עוד טיפה כהה */
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      background: #e1e1e1;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     }
 
     .title {
-      font-size: 18px;
-      margin-bottom: 10px;
+      font-size: 22px;
+      margin-bottom: 12px;
       font-weight: bold;
       color: #111;
     }
 
     iframe {
-      border-radius: 6px;
+      width: 100%;
+      max-width: 400px;
+      height: 70px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* התאמה למובייל */
+    @media (max-width: 600px) {
+      .box {
+        padding: 15px;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 80px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="box">
-    <div class="title">צילום גב</div>
-    <iframe width="250" height="54" frameborder="0"
-      src="https://mega.nz/filerequest#!n1Xtc_kgzmM!l!en"></iframe>
-  </div>
+  <div class="container">
 
-  <div class="box">
-    <div class="title">צילום חזה</div>
-    <iframe width="250" height="54" frameborder="0"
-      src="https://mega.nz/filerequest#!MDCz74SrSic!l!en"></iframe>
-  </div>
+    <div class="box">
+      <div class="title">צילום גב</div>
+      <iframe src="https://mega.nz/filerequest#!n1Xtc_kgzmM!l!en"></iframe>
+    </div>
 
-  <div class="box">
-    <div class="title">צילום ירך ימין</div>
-    <iframe width="250" height="54" frameborder="0"
-      src="https://mega.nz/filerequest#!pr7khCuzv_A!l!en"></iframe>
+    <div class="box">
+      <div class="title">צילום חזה</div>
+      <iframe src="https://mega.nz/filerequest#!MDCz74SrSic!l!en"></iframe>
+    </div>
+
+    <div class="box">
+      <div class="title">צילום ירך ימין</div>
+      <iframe src="https://mega.nz/filerequest#!pr7khCuzv_A!l!en"></iframe>
+    </div>
+
   </div>
 
 </body>
